@@ -1,26 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="C:\Users\Kareem\projects\Challenge-4\assets\.css"> 
-        <script scr="C:\Users\Kareem\projects\Challenge-4\assets\.js"></script>
-        <title>Javascript Quiz</title>
-    </head>
-    <body>
-        <div class="container">
-            <div id="questions-container" class="hide">
-                <div id="questions">Question</div>
-                <div id="ans-buttons" class="btn-grid">
-                    <button class="btn">Answer 1</button>
-                    <button class="btn">Answer 2</button>
-                    <button class="btn">Answer 3</button>
-                    <button class="btn">Answer 4</button>
-                </div>
-            </div>
-            <div class="controls">
-                <button id="start-btn" class="start-button">Start</button>
-                <button id="next-btn" class="next-button hide">Next</button>
-            </div>
+<html>
+<head>
+    <title>Code Quiz</title>
+    <link rel="stylesheet"  href="./assets/style.css">
+</head>
+<body>
+    <h1>Code Quiz</h1>
+    <h2 id="timer">Time: 60</h2>
+    <button id="start-btn">Start Quiz</button>
+    <div id="question-container" style="display: none;">
+        <h2 id="question"></h2>
+        <div id="answers">
+            <!-- answer buttons will go here -->
         </div>
-    </body>
+    </div>
+    <div id="end-screen" style="display: none;">
+        <h2>Your Score: <span id="score"></span></h2>
+        <input id="initials-input" placeholder="Enter initials">
+        <button id="save-score-btn">Save Score</button>
+    </div>
+    <button id="view-scores-btn">View High Scores</button>
+<div id="high-scores" style="display: none;">
+    <h2>High Scores</h2>
+    <div id="scores-list">
+        <!-- Scores will go here -->
+    </div>
+    <button id="clear-scores-btn">Clear High Scores</button>
+</div>
+
+    <script src="./assets/javascript.js"></script>
+</body>
 </html>
